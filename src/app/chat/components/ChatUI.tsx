@@ -33,7 +33,7 @@ export default function ChatUI() {
     const timeoutId = setTimeout(() => controller.abort(), 60000); // Auto-cancel after 1 min
 
     try {
-      const updatedMessages = [...messages, { role: userMessage.role, content: `Feel free to squeeze in a joke but not frequently.Answer this question as short and concise as possible unless the user specifically asks you to go in detail. ${userMessage.content}` }];
+      const updatedMessages = [...messages, { role: userMessage.role, content: `Answer this question as short and concise as possible in at least two sentences or more unless the user specifically asks you to go in detail. ${userMessage.content}` }];
 
       const res = await fetch("/api/chat", {
         method: "POST",
