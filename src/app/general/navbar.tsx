@@ -83,7 +83,7 @@ const NavBar: React.FC<{
 	/** Tablet View */
 	const tableView = () => {
 		return (
-			<div className="DesktopScreen:hidden MobileScreen:hidden  flex flex-row justify-between py-[13px] px-[24px] shadow-md">
+			<div className="DesktopScreen:hidden MobileScreen:hidden bg-[#fb923c]  flex flex-row justify-between py-[13px] px-[24px] shadow-md">
 				<div
 					className="h-[4rem] w-[4rem] cursor-pointer"
 					onClick={() => {

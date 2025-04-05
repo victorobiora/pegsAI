@@ -33,7 +33,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#199B6C" />
         <meta
           name="description"
-          content="AI tool using deepseek as LLM"
+          content="AI tool using Google Gemini as LLM"
         />
 
         <title>PegsAI.</title>

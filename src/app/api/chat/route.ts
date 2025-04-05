@@ -14,7 +14,7 @@ const detectCryptoQueryAI = async (message: string) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "deepseek/deepseek-chat-v3-0324",
+      model: "google/gemini-2.0-flash-001",
       messages: [
         {
           role: "user",
@@ -48,12 +48,12 @@ export async function POST(req: Request) {
       method: "POST",
       headers: {
         Authorization: `Bearer ${API_KEY}`,
-        "HTTP-Referer": "localhost:3000", // Optional. Site URL for rankings on openrouter.ai.
+        "HTTP-Referer": "pegs-ai.vercel.app", // Optional. Site URL for rankings on openrouter.ai.
         "X-Title": "PegsAI", // Optional. Site title for rankings on openrouter.ai.
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "deepseek/deepseek-chat-v3-0324",
+        model: "google/gemini-2.0-flash-001",
         messages: messages,
 
         max_tokens: 500,

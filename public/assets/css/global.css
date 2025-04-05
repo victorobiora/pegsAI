@@ -18,6 +18,14 @@
   }
 }
 
+#root, #__next {
+  height: 100%; 
+}
+
+html {
+  background-color: linear-gradient(to bottom, #fb923c, #fcd34d);
+}
+
 body {
   color: var(--background);
   background: linear-gradient(to bottom, #fb923c, #fcd34d);

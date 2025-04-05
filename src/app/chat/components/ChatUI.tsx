@@ -33,7 +33,7 @@ export default function ChatUI() {
     const timeoutId = setTimeout(() => controller.abort(), 60000); // Auto-cancel after 1 min
 
     try {
-      const updatedMessages = [...messages, { role: userMessage.role, content: `Answer this question as short and concise as possible. ${userMessage.content}` }];
+      const updatedMessages = [...messages, { role: userMessage.role, content: `Feel free to squeeze in a joke but not frequently.Answer this question as short and concise as possible unless the user specifically asks you to go in detail. ${userMessage.content}` }];
 
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -87,8 +87,8 @@ export default function ChatUI() {
           <span className="text-blue-400">AI</span>
         </div>
         <div className="italic my-2 text-center drop-shadow-lg text-sm">
-          (<span className="text-orange-500">Deepseek</span>{" "}
-          <span className="text-blue-400">V3</span>)
+          <span className="text-orange-500">Google</span>{" "}
+          <span className="text-blue-400">Gemini</span>
         </div>
       </header>
 
