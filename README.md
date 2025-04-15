@@ -100,7 +100,7 @@ Open http://localhost:3000 in your browser.
 
 NB: Credits would have to be purchased on openrouter.ai
 
-NB: When making requests to the openrouter server, include the preferred model in your body field. Diffrent models have different price rates per million tokens. choose wisely. Google Gemini was used in this case but can be changed to any other model available.
+NB: When making requests to the openrouter server, include the preferred model in your body field. Various models have different price rates per million tokens. choose wisely. Google Gemini was used in this case but can be changed to any other model available.
 
 
 
